@@ -11,6 +11,7 @@ public:
     ConcreteDecoratorA(Component* component) : Decorator(component) {
     }
     std::string Operation() const override {
+        std::cout << "zmiana Patrycja";
         return "ConcreteDecoratorA(" + Decorator::Operation() + ")";
     }
 };
