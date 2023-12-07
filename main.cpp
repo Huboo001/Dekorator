@@ -15,7 +15,7 @@ int main() {
      * This way the client code can support both simple components...
      */
     Component* simple = new ConcreteComponent;
-    std::cout << "Client: I've got a simple component:\n";
+    std::cout << "Testy zmian\n";
     ClientCode(simple);
     std::cout << "\n\n";
     /**
@@ -26,7 +26,7 @@ int main() {
      */
     Component* decorator1 = new ConcreteDecoratorA(simple);
     Component* decorator2 = new ConcreteDecoratorB(decorator1);
-    std::cout << "Client: Now I've got a decorated component:\n";
+    std::cout << "Ciekawe czy dziala\n";
     ClientCode(decorator2);
     std::cout << "\n";
 
